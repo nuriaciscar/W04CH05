@@ -8,13 +8,13 @@ const Login = ({ title, lastStep, submit }) => {
         <h1>{title}</h1>
         <Input
           type={"text"}
-          class={"form-control"}
+          className={"form-control"}
           id={"userInput"}
           placeholder={"User"}
         />
         <Input
           type={"text"}
-          class={"form-control"}
+          className={"form-control"}
           id={"passwordInput"}
           placeholder={"Password"}
         />
@@ -22,7 +22,7 @@ const Login = ({ title, lastStep, submit }) => {
         {lastStep ? (
           <Input
             type={"text"}
-            class={"form-control"}
+            className={"form-control"}
             id={"password2Input"}
             placeholder={"Repeat password"}
           />
@@ -30,7 +30,7 @@ const Login = ({ title, lastStep, submit }) => {
           <>
             <Input
               type={"checkbox"}
-              class={"form-check-input"}
+              className={"form-check-input"}
               id={"passwordCheck"}
             />
             <Input
@@ -45,13 +45,13 @@ const Login = ({ title, lastStep, submit }) => {
           <>
             <Button
               type={"button"}
-              className={"personalData button"}
+              className={"btn btn-primary btn-lg"}
               text={"Back"}
               actionOnClick={() => {}}
             />
             <Button
               type={"button"}
-              className={"personalData button"}
+              className={"btn btn-primary btn-lg"}
               text={"Next"}
               actionOnClick={() => {}}
             />
@@ -59,7 +59,7 @@ const Login = ({ title, lastStep, submit }) => {
         ) : (
           <Button
             type={"submit"}
-            className={"submit button"}
+            className={"btn btn-primary btn-lg"}
             text={"Login"}
             actionOnClick={() => {}}
           />

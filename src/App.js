@@ -1,15 +1,18 @@
-import logo from "./logo.svg";
 import "./App.css";
 import PersonalData from "./components/PersonalData/PersonalData";
 import Login from "./components/Login.js/Login";
+import FormContext from "./context/context";
+import { useState } from "react";
 
 function App() {
+  const [available, setAvailable] = useState("");
 
-  nextPage() => {
+  // nextPage = () => {
+  //   console.log("h");
+  // };
 
-  }
   return (
-    <FormContext.Provider value={{ nextPage }}>
+    // <FormContext.Provider value={{nextPage()}}>
     <div className="form-group">
       <PersonalData title={"Personal Data"} />
       <Login title={"Acces Data"} lastStep={true} submit={true} />
@@ -68,7 +71,7 @@ function App() {
         ></input>
       </section> */}
       {/* <section className="login-data"> */}
-        {/* <h1>Login</h1>
+      {/* <h1>Login</h1>
         <input
           type="text"
           className="form-control"
@@ -81,7 +84,7 @@ function App() {
           id="userInput"
           placeholder="Password"
         ></input> */}
-        {/* <input
+      {/* <input
           type="text"
           className="form-control"
           id="userInput"
@@ -95,12 +98,12 @@ function App() {
         <label className="form-check-label" for="passwordCheck">
           Remember Password
         </label> */}
-        {/* <button type="submit" className="submit button">
+      {/* <button type="submit" className="submit button">
           Login
         </button> */}
       {/* </section> */}
     </div>
-    </FormContext.Provider>
+    // </FormContext.Provider>
   );
 }
 

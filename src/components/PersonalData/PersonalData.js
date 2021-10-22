@@ -10,16 +10,16 @@ const PersonalData = ({ title }) => {
           for={"nameInput"}
           text={"Name"}
           type={"text"}
-          class={"form-control"}
+          className={"form-control"}
           id={"nameInput"}
           placeholder={"Example: Pepe"}
         />
 
         <Input
           for={"surnameInput"}
-          text={"Name"}
+          text={"Last Name"}
           type={"text"}
-          class={"form-control"}
+          className={"form-control"}
           id={"surnameInput"}
           placeholder={"Example: Mujica"}
         />
@@ -28,7 +28,7 @@ const PersonalData = ({ title }) => {
           for={"date"}
           text={"Date"}
           type={"text"}
-          class={"form-control"}
+          className={"form-control"}
           id={"date"}
           placeholder={"MM/DD/YYY"}
         />
@@ -37,14 +37,24 @@ const PersonalData = ({ title }) => {
           for={"ageInput"}
           text={"Age"}
           type={"text"}
-          class={"form-control"}
+          className={"form-control"}
           id={"ageInput"}
           placeholder={""}
         />
 
+        <Input
+          for={"email"}
+          text={"Email"}
+          type={"text"}
+          className={"form-control"}
+          id={"emailInput"}
+          placeholder={"Enter your email"}
+          pattern={"[^ @]*@[^ @]"}
+        />
+
         <Button
           type={"button"}
-          className={"personalData button"}
+          className={"btn btn-primary btn-lg"}
           text={"Next"}
           actionOnClick={() => {}}
         />

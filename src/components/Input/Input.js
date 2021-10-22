@@ -1,12 +1,13 @@
-const Input = ({ type, name, text, className, placeholder }) => {
+const Input = ({ type, name, text, className, placeholder, pattern }) => {
   return (
     <>
       <label for={name}>{text}</label>
       <input
         type={type}
-        class={className}
+        className={className}
         id={name}
         placeholder={placeholder}
+        pattern={pattern}
       ></input>
     </>
   );
