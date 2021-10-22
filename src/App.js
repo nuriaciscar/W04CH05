@@ -1,10 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
+import PersonalData from "./components/PersonalData";
 
 function App() {
   return (
     <div className="form-group">
-      <section className="personal-data">
+      <PersonalData />
+      {/* <section className="personal-data">
         <h1>Personal Data</h1>
         <label for="nameInput">Name</label>
         <input
@@ -16,18 +18,15 @@ function App() {
         <label for="surnameInput">Last name</label>
         <input
           type="text"
-          cclassName="form-control"
+          className="form-control"
           id="surnameInput"
           placeholder="Example: Mujica"
         ></input>
 
-        <label cclassName="control-label" for="date">
-          Date
-        </label>
+        <label for="date">Date</label>
         <input
           className="form-control"
           id="date"
-          name="date"
           placeholder="MM/DD/YYY"
           type="text"
         />
@@ -38,7 +37,7 @@ function App() {
           id="ageInput"
           placeholder=""
         ></input>
-      </section>
+      </section> */}
       <section className="access-data">
         <h1>Access data</h1>
         <input
