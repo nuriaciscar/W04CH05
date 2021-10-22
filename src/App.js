@@ -1,23 +1,97 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="form-group">
+      <section className="personal-data">
+        <h1>Personal Data</h1>
+        <label for="nameInput">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nameInput"
+          placeholder="Example: Pepe"
+        ></input>
+        <label for="surnameInput">Last name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="surnameInput"
+          placeholder="Example: Mujica"
+        ></input>
+
+        <label class="control-label" for="date">
+          Date
+        </label>
+        <input
+          class="form-control"
+          id="date"
+          name="date"
+          placeholder="MM/DD/YYY"
+          type="text"
+        />
+        <label for="ageInput">Age</label>
+        <input
+          type="text"
+          class="form-control"
+          id="ageInput"
+          placeholder=""
+        ></input>
+      </section>
+      <section className="access data">
+        <h1>Access data</h1>
+        <input
+          type="text"
+          class="form-control"
+          id="userInput"
+          placeholder="User"
+        ></input>
+        <input
+          type="text"
+          class="form-control"
+          id="userInput"
+          placeholder="Password"
+        ></input>
+        <input
+          type="text"
+          class="form-control"
+          id="userInput"
+          placeholder="Repeat Password"
+        ></input>
+      </section>
+      <section className="login data">
+        <h1>Login</h1>
+        <input
+          type="text"
+          class="form-control"
+          id="userInput"
+          placeholder="User"
+        ></input>
+        <input
+          type="text"
+          class="form-control"
+          id="userInput"
+          placeholder="Password"
+        ></input>
+        <input
+          type="text"
+          class="form-control"
+          id="userInput"
+          placeholder="Repeat Password"
+        ></input>
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="passwordCheck"
+        ></input>
+        <label class="form-check-label" for="passwordCheck">
+          Remember Password
+        </label>
+        <button type="submit" class="submit button">
+          Login
+        </button>
+      </section>
     </div>
   );
 }
