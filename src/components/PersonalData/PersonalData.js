@@ -1,43 +1,34 @@
-import Button from "./Button";
-import Input from "./Input";
+import Button from "../Button/Button";
+import Input from "../Input/Input";
 
-const PersonalData = () => {
+const PersonalData = ({ title }) => {
   return (
     <>
       <section className="personal-data">
-        <h1>Personal Data</h1>
+        <h1>{title}</h1>
         <Input
           for={"nameInput"}
           text={"Name"}
           type={"text"}
-          class={"form-control"}
+          className={"form-control"}
           id={"nameInput"}
           placeholder={"Example: Pepe"}
         />
 
         <Input
           for={"surnameInput"}
-          text={"Name"}
+          text={"Last Name"}
           type={"text"}
-          class={"form-control"}
+          className={"form-control"}
           id={"surnameInput"}
           placeholder={"Example: Mujica"}
-        />
-
-        <Input
-          for={"nameInput"}
-          text={"Name"}
-          type={"text"}
-          class={"form-control"}
-          id={"nameInput"}
-          placeholder={"Example: Pepe"}
         />
 
         <Input
           for={"date"}
           text={"Date"}
           type={"text"}
-          class={"form-control"}
+          className={"form-control"}
           id={"date"}
           placeholder={"MM/DD/YYY"}
         />
@@ -46,15 +37,26 @@ const PersonalData = () => {
           for={"ageInput"}
           text={"Age"}
           type={"text"}
-          class={"form-control"}
+          className={"form-control"}
           id={"ageInput"}
           placeholder={""}
         />
 
+        <Input
+          for={"email"}
+          text={"Email"}
+          type={"text"}
+          className={"form-control"}
+          id={"emailInput"}
+          placeholder={"Enter your email"}
+          pattern={"[^ @]*@[^ @]"}
+        />
+
         <Button
           type={"button"}
-          className={"personalData button"}
+          className={"btn btn-primary btn-lg"}
           text={"Next"}
+          actionOnClick={() => {}}
         />
       </section>
     </>

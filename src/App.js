@@ -1,11 +1,22 @@
-import logo from "./logo.svg";
 import "./App.css";
-import PersonalData from "./components/PersonalData";
+import PersonalData from "./components/PersonalData/PersonalData";
+import Login from "./components/Login.js/Login";
+import FormContext from "./context/context";
+import { useState } from "react";
 
 function App() {
+  const [available, setAvailable] = useState("");
+
+  // nextPage = () => {
+  //   console.log("h");
+  // };
+
   return (
+    // <FormContext.Provider value={{nextPage()}}>
     <div className="form-group">
-      <PersonalData />
+      <PersonalData title={"Personal Data"} />
+      <Login title={"Acces Data"} lastStep={true} submit={true} />
+      <Login title={"Login"} lastStep={false} submit={false} />
       {/* <section className="personal-data">
         <h1>Personal Data</h1>
         <label for="nameInput">Name</label>
@@ -38,7 +49,7 @@ function App() {
           placeholder=""
         ></input>
       </section> */}
-      <section className="access-data">
+      {/* <section className="access-data">
         <h1>Access data</h1>
         <input
           type="text"
@@ -58,9 +69,9 @@ function App() {
           id="userInput"
           placeholder="Repeat Password"
         ></input>
-      </section>
-      <section className="login-data">
-        <h1>Login</h1>
+      </section> */}
+      {/* <section className="login-data"> */}
+      {/* <h1>Login</h1>
         <input
           type="text"
           className="form-control"
@@ -72,8 +83,8 @@ function App() {
           className="form-control"
           id="userInput"
           placeholder="Password"
-        ></input>
-        <input
+        ></input> */}
+      {/* <input
           type="text"
           className="form-control"
           id="userInput"
@@ -86,12 +97,13 @@ function App() {
         ></input>
         <label className="form-check-label" for="passwordCheck">
           Remember Password
-        </label>
-        <button type="submit" className="submit button">
+        </label> */}
+      {/* <button type="submit" className="submit button">
           Login
-        </button>
-      </section>
+        </button> */}
+      {/* </section> */}
     </div>
+    // </FormContext.Provider>
   );
 }
 

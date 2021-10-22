@@ -11,3 +11,7 @@
 section {
   width: 25%;
 }
+
+.off {
+  display: none;
+}
