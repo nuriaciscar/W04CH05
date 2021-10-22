@@ -9,23 +9,23 @@ function App() {
         <label for="nameInput">Name</label>
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           id="nameInput"
           placeholder="Example: Pepe"
         ></input>
         <label for="surnameInput">Last name</label>
         <input
           type="text"
-          class="form-control"
+          cclassName="form-control"
           id="surnameInput"
           placeholder="Example: Mujica"
         ></input>
 
-        <label class="control-label" for="date">
+        <label cclassName="control-label" for="date">
           Date
         </label>
         <input
-          class="form-control"
+          className="form-control"
           id="date"
           name="date"
           placeholder="MM/DD/YYY"
@@ -34,61 +34,61 @@ function App() {
         <label for="ageInput">Age</label>
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           id="ageInput"
           placeholder=""
         ></input>
       </section>
-      <section className="access data">
+      <section className="access-data">
         <h1>Access data</h1>
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           id="userInput"
           placeholder="User"
         ></input>
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           id="userInput"
           placeholder="Password"
         ></input>
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           id="userInput"
           placeholder="Repeat Password"
         ></input>
       </section>
-      <section className="login data">
+      <section className="login-data">
         <h1>Login</h1>
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           id="userInput"
           placeholder="User"
         ></input>
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           id="userInput"
           placeholder="Password"
         ></input>
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           id="userInput"
           placeholder="Repeat Password"
         ></input>
         <input
-          class="form-check-input"
+          className="form-check-input"
           type="checkbox"
           id="passwordCheck"
         ></input>
-        <label class="form-check-label" for="passwordCheck">
+        <label className="form-check-label" for="passwordCheck">
           Remember Password
         </label>
-        <button type="submit" class="submit button">
+        <button type="submit" className="submit button">
           Login
         </button>
       </section>
