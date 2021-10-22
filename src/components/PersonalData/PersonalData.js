@@ -1,11 +1,11 @@
-import Button from "./Button";
-import Input from "./Input";
+import Button from "../Button/Button";
+import Input from "../Input/Input";
 
-const PersonalData = () => {
+const PersonalData = ({ title }) => {
   return (
     <>
       <section className="personal-data">
-        <h1>Personal Data</h1>
+        <h1>{title}</h1>
         <Input
           for={"nameInput"}
           text={"Name"}
@@ -22,15 +22,6 @@ const PersonalData = () => {
           class={"form-control"}
           id={"surnameInput"}
           placeholder={"Example: Mujica"}
-        />
-
-        <Input
-          for={"nameInput"}
-          text={"Name"}
-          type={"text"}
-          class={"form-control"}
-          id={"nameInput"}
-          placeholder={"Example: Pepe"}
         />
 
         <Input
@@ -55,6 +46,7 @@ const PersonalData = () => {
           type={"button"}
           className={"personalData button"}
           text={"Next"}
+          actionOnClick={() => {}}
         />
       </section>
     </>
