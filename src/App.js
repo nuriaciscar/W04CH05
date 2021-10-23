@@ -1,11 +1,11 @@
 import "./App.css";
 import PersonalData from "./components/PersonalData/PersonalData";
 import Login from "./components/Login.js/Login";
-import FormContext from "./context/context";
-import { useState } from "react";
+
+// import { useState } from "react";
 
 function App() {
-  const [available, setAvailable] = useState("");
+  // const [available, setAvailable] = useState("");
 
   // nextPage = () => {
   //   console.log("h");
