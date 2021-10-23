@@ -1,7 +1,6 @@
 import "./App.css";
 import PersonalData from "./components/PersonalData/PersonalData";
 import Login from "./components/Login.js/Login";
-
 // import { useState } from "react";
 
 function App() {
@@ -100,7 +99,7 @@ function App() {
         </label> */}
       {/* <button type="submit" className="submit button">
           Login
-        </button> */}
+        </button>*/}
       {/* </section> */}
     </div>
     // </FormContext.Provider>
